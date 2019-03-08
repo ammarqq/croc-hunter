@@ -21,7 +21,7 @@ helm repo update
 
 ## Fork repo
 ``` 
-https://github.com/lachie83/croc-hunter#fork-destination-box
+https://github.com/ammarqq/croc-hunter#fork-destination-box
 ```
 
 ## Install Kube Lego chart
@@ -74,10 +74,10 @@ Reference to the secret name must also be added to the chart values.yaml or set 
 
 If you're not using quay you can configure this to alternate locations in Jenkinsfile.json
 # Credentials > Jenkins > Global credentials > Add Credentials
-#   Username: lachie83
+#   Username: ammarqq
 #   Password: ***
 #   ID: quay_creds
-#   Description: https://quay.io/user/lachie83
+#   Description: https://quay.io/user/ammarqq
 
 # Open Blue Ocean
 # Create a new Pipeline
@@ -88,7 +88,7 @@ If you're not using quay you can configure this to alternate locations in Jenkin
 #     Token description: kubernetes-jenkins
 #   Generate token > Copy Token > Paste back in Jenkins  
 # Which organization does the repository belong to?
-#   lachie83
+#   ammarqq
 # Create a single Pipeline or discover all Pipelines?
 #   New pipeline
 # Choose a repository
@@ -104,7 +104,7 @@ kubectl get pods --namespace jenkins
 ## Update Org to build PRs
 ```
 # Classic Jenkins
-# lachie83 (GitHub org)
+# ammarqq (GitHub org)
 # Configure
 # Advanced
 #   Build origin PRs (merged with base branch)
@@ -116,7 +116,7 @@ kubectl get pods --namespace jenkins
 ``` 
 printf ${JENKINS_URL}/github-webhook/ | pbcopy
 
-# https://github.com/lachie83/croc-hunter/settings/hooks
+# https://github.com/ammarqq/croc-hunter/settings/hooks
 # Add webhook
 #   Payload URL: <paste>
 # Which events would you like to trigger this webhook?
@@ -143,11 +143,11 @@ git push
 
 ### Building and releasing
 ```
-open ${JENKINS_URL}/blue/organizations/jenkins/lachie83%2Fcroc-hunter/activity/
+open ${JENKINS_URL}/blue/organizations/jenkins/ammarqq%2Fcroc-hunter/activity/
 
 # dev branch builds
 
-open https://github.com/lachie83/croc-hunter
+open https://github.com/ammarqq/croc-hunter
 
 # PR from dev to master
 # PR builds

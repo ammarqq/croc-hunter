@@ -19,10 +19,12 @@ memory: "128Mi"
 ingress:
   enabled: true
   hostname: croc-hunter.progressoft.cloud
+  secretName: progressoft-cloud-nginx-ingress
   annotations:
      kubernetes.io/ingress.class: nginx
      kubernetes.io/tls-acme: "true"
   tls: true
+  secretName: progressoft-cloud-nginx-ingress
 ## PodDisruptionBudget
 pdb:
   enabled: false

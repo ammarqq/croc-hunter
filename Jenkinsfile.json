@@ -5,7 +5,7 @@
     "cpu": "10m",
     "memory": "128Mi",
     "test": true,
-    "hostname": "croc-hunter.acs.az.estrado.io"
+    "hostname": "croc-hunter.progressoft.cloud"
   },
   "container_repo": {
     "host": "quay.io",
@@ -21,7 +21,7 @@
       "enabled": true,
       "debug": false,
       "library": {
-        "branch": "dev"
+        "branch": "master"
       }
   }
 }

@@ -3,6 +3,7 @@ apiVersion: policy/v1beta1
 kind: PodDisruptionBudget
 metadata:
   name: {{ template "fullname" . }}
+  namespace: kube-jenkins
   annotations:
   labels:
     heritage: {{.Release.Service | quote }}
